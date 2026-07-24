@@ -8,6 +8,7 @@ int main() {
     const int PASSOS_TORRE = 5;
     const int PASSOS_BISPO = 5;
     const int PASSOS_RAINHA = 8;
+    const int PASSOS_CAVALO = 3;
 
     // 1. MOVIMENTAÇÃO DA TORRE (Uso do laço 'for')
     printf("--- Movimentação da Torre ---\n");
@@ -30,6 +31,18 @@ int main() {
         printf("Esquerda\n");
         passoRainha++; 
     } while (passoRainha <= PASSOS_RAINHA);
+
+    // 3. MOVIMENTAÇÃO DO CAVALO (Uso do laço 'for' e 'while')
+    printf("\n--- Movimentação do Cavalo ---\n");
+    int passoCavalo = 1;
+    while (passoCavalo<=PASSOS_CAVALO){
+        for (passoCavalo; passoCavalo < PASSOS_CAVALO; passoCavalo++){
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+        passoCavalo++;
+
+    }
 
     return 0;
 }
